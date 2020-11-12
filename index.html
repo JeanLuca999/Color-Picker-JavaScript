@@ -8,9 +8,26 @@
 </head>
 <body>
     <main>
-        <input type="range" id="colorR" class="selecionar-cor" max="255" min="0">
-        <input type="range" id="colorG" class="selecionar-cor" max="255" min="0">
-        <input type="range" id="colorB" class="selecinar-cor" max="255" min="0">
+        <div id="cor-atual"></div>
+
+        <div class="seletores">
+
+            <div id="seletores-red">
+                <p>Red: 0</p>
+                <input type="range" id="colorR" class="seletores-cor" max="255" min="0" value="0">
+            </div>
+
+            <div id="seletores-green">
+                <p>Green: 0</p>
+                <input type="range" id="colorG" class="seletores-cor" max="255" min="0" value="0">
+            </div>
+
+            <div id="seletores-blue">
+                <p>Blue: 0</p>
+                <input type="range" id="colorB" class="seletores-cor" max="255" min="0" value="0">
+            </div>
+
+        </div>
     </main>
     <script src="./js/script.js"></script>
 </body>

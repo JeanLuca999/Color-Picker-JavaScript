@@ -3,6 +3,30 @@
     padding: 0;
 }
 
-.selecionar-cor {
-    display: block;
+#cor-atual {
+    width: 300px;
+    height: 300px;
+
+    margin: 20px auto;
+
+    background-color: rgb(0, 0, 0);
+
+    border: 1px solid black;
+    
+    border-radius: 50%;
+}
+
+#seletores-red, #seletores-green, #seletores-blue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+.seletores-cor {
+    width: 80%;
+    margin: 0 auto;
 }
