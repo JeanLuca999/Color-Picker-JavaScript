@@ -1,9 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
 }
 
 #cor-atual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 300px;
     height: 300px;
 
@@ -16,6 +21,17 @@
     border-radius: 50%;
 }
 
+#cor-atual > div {
+    width: 100px;
+    height: 20px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 20px;
+}
+
 #seletores-red, #seletores-green, #seletores-blue {
     display: flex;
     flex-direction: column;
@@ -24,9 +40,11 @@
     width: 80%;
 
     margin: 0 auto;
+
 }
 
 .seletores-cor {
     width: 80%;
-    margin: 0 auto;
+    height: 0.5em;
+    margin: 10px;
 }

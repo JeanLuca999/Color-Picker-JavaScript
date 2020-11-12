@@ -11,16 +11,19 @@ $R.addEventListener('change', ()=>{
     redColor = $R.value
     $corAtual.style.backgroundColor = `rgb(${redColor}, ${greenColor}, ${blueColor})`
     document.getElementById('seletores-red').querySelector('p').innerText = `Red: ${redColor}`
+    $corAtual.querySelector('div').innerText = `#${(Number(redColor)).toString(16).toUpperCase()}${(Number(greenColor)).toString(16).toUpperCase()}${(Number(blueColor)).toString(16).toUpperCase()}`
 })
 
 $G.addEventListener('change', ()=>{
     greenColor = $G.value
     $corAtual.style.backgroundColor = `rgb(${redColor}, ${greenColor}, ${blueColor})`
     document.getElementById('seletores-green').querySelector('p').innerText = `Green: ${greenColor}`
+    $corAtual.querySelector('div').innerText = `#${(Number(redColor)).toString(16).toUpperCase()}${(Number(greenColor)).toString(16).toUpperCase()}${(Number(blueColor)).toString(16).toUpperCase()}`
 })
 
 $B.addEventListener('change', ()=>{
     blueColor = $B.value
     $corAtual.style.backgroundColor = `rgb(${redColor}, ${greenColor}, ${blueColor})`
     document.getElementById('seletores-blue').querySelector('p').innerText = `Blue: ${blueColor}`
+    $corAtual.querySelector('div').innerText = `#${(Number(redColor)).toString(16).toUpperCase()}${(Number(greenColor)).toString(16).toUpperCase()}${(Number(blueColor)).toString(16).toUpperCase()}`
 })
