@@ -4,7 +4,12 @@
     outline: 0;
 }
 
+html {
+    font-size: 10px;
+}
+
 h1 {
+    font-size: 3rem;
     text-align: center;
 
     width: 300px;
@@ -12,6 +17,10 @@ h1 {
     border-bottom: 1px solid black;
 
     margin: 20px auto;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .container {
@@ -23,7 +32,7 @@ h1 {
     height: 300px;
     border-radius: 30px;
     
-    background-color: rgba(172, 172, 172, 0.281);
+    background-color:rgb(243, 243, 243);
 
     margin: 20px auto;
 }
@@ -49,6 +58,7 @@ h1 {
     width: 100px;
     height: 20px;
 
+    font-size: 1.6rem;
     text-align: center;
 
     background-color: white;
@@ -62,17 +72,52 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 80%;
+    max-width: 500px;
 
     margin: 0 auto;
+    margin-bottom: 20px;
+    
+    border: 1px solid black;
+    border-top: none;
 
+    border-radius: 10%;
 }
 
-.seletores-cor {
+#seletores-red p {
+    background-color: red;
+}
+
+#seletores-green p {
+    background-color: green;
+}
+
+#seletores-blue p {
+    background-color: blue;
+}
+
+.seletores-cor{
     width: 80%;
     max-width: 200px;
-    height: 0.5em;
     margin: 20px 10px;
+
 }
+
+p {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    text-shadow: 0 2px 2px black;
+    text-align: center;
+
+    color: white;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 
 @media(min-width:600px){
     .container {
